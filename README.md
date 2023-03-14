@@ -23,4 +23,4 @@ En jouant sur la classe "*hidden*" de tailwind
 ## Afficher le panier de l'utilisateur
 Avec les quantités et les références des hoodies
 ## Afficher le prix total du panier
-En jouant sur la classe "*hidden*" de tailwind
+En fonction des quantités
