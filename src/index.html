@@ -23,24 +23,29 @@
     </nav>
     <div class="container mx-auto mt-4  w-2/3 bg-card-background rounded py-2">
         
-        <div id="filters" class="px-4 mt-4 flex space-x-2">
+        <div id="filters" class="px-4 mt-4 flex space-x-2 bg-white py-2">
             <span
-                class="inline-block whitespace-nowrap rounded-[0.27rem] cursor-pointer bg-tertiary-contrast px-[0.65em] pt-[0.35em] pb-[0.30em] text-center align-baseline text-[0.75em] leading-none text-card-background-light">
+                class="px-2 border-tertiary-contrast border-2 border-primary cursor-pointer rounded-[0.27rem] text-white bg-tertiary-contrast hover:text-orange-300 ">
+                All
+            </span>
+            <span
+                class="px-2 border-tertiary-contrast border-2 border-primary cursor-pointer rounded-[0.27rem] hover:text-red-600">
                 Lacoste
             </span>
             <span
-                class="inline-block whitespace-nowrap rounded-[0.27rem] cursor-pointer bg-tertiary-contrast px-[0.65em] pt-[0.35em] pb-[0.30em] text-center align-baseline text-[0.75em] leading-none text-card-background-light">
+                class="px-2 border-tertiary-contrast border-2 border-primary cursor-pointer rounded-[0.27rem]  hover:text-red-600">
                 Dedicated
             </span>
             <span
-                class="inline-block whitespace-nowrap rounded-[0.27rem] cursor-pointer bg-tertiary-contrast px-[0.65em] pt-[0.35em] pb-[0.30em] text-center align-baseline text-[0.75em] leading-none text-card-background-light">
+                class="px-2 border-tertiary-contrast border-2 border-primary cursor-pointer rounded-[0.27rem]  hover:text-red-600">
                 &#60;100€ 
             </span>
+          
         </div>
 
         <div id="item-list" class="px-4 ">
             <!-- item card -->
-            <div class="flex w-full border-b-2 border-tertiary-contrast mt-6">
+            <div id='item-card' class="flex w-full border-b-2 border-tertiary-contrast mt-6">
                 <div
                   class="flex rounded-lg bg-card-background-light shadow-lg flex-row w-full">
                   <img
@@ -117,17 +122,94 @@
                   </div>
                 </div>
             </div>
-            
+            <div id='item-card' class="flex w-full border-b-2 border-tertiary-contrast mt-6">
+                <div
+                  class="flex rounded-lg bg-card-background-light shadow-lg flex-row w-full">
+                  <img
+                    class="h-96 w-full rounded-t-lg object-cover md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
+                    src="https://cdn.shopify.com/s/files/1/0550/6996/6414/products/6560_1800x.jpg?v=1645098113"
+                    alt="" />
+                  <div class="flex flex-col justify-start p-6">
+                    <h5   class="mb-2 text-2xl font-bold text-neutral-800">
+                        Card title
+                        <span  class="inline-block ml-4 bg-button-background  border-button-text rounded-md border-2 border-primary px-6 py-2  text-sm font-bold uppercase leading-normal text-primary ">
+                            120€
+                        </span>
+                    </h5>
+
+                    <p class="mb-4 text-base text-neutral-600">
+                      This is a wider card with supporting text below as a natural
+                      lead-in to additional content. This content is a little bit
+                      longer.
+                    </p>
+                    <p class="text-xs text-neutral-600">
+                        <button
+                            type="button"
+                            class="inline-block rounded border-2  border-tertiary-contrast border-opacity-75 px-6 pt-2 pb-2 text-xs font-medium uppercase leading-normal text-info "
+                            >
+                            S
+                      </button>
+                      
+                      <button 
+                            type="button"
+                            class="inline-block rounded border-2  border-button-text px-6 pt-2 pb-2 text-xs font-medium uppercase leading-normal text-info "
+                            > <!-- exemple quand la taille est séléctionnée vvvv   -->
+                            M
+                      </button>
+                      <button
+                        type="button"
+                        class="inline-block rounded border-2   border-tertiary-contrast border-opacity-75 px-6 pt-2 pb-2 text-xs font-medium uppercase leading-normal text-info "
+                      >
+                        L
+                     </button>
+                     <button
+                        type="button"
+                        class="inline-block rounded border-2   border-tertiary-contrast border-opacity-75 px-6 pt-2 pb-2 text-xs font-medium uppercase leading-normal"
+                      >
+                        XL
+                     </button>
+                    </p>
+                    <div class="flex flex-row mt-12">
+                        <div class="basis-1/4 w-96">
+                            QTY
+                            <select >
+                                <option value="0">0</option>
+                                <option value="1" selected>1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                            </select>
+                        </div>
+                        <div class="basis-1/4">
+                            <button
+                                type="button"
+                                class="inline-block rounded border-2 bg-tertiary-contrast text-card-background-light border-button-text px-6 pt-2 pb-2 text-xs font-medium uppercase leading-normal text-info w-44"
+                            >
+                                ADD TO CART 
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="ml-2 w-6 h-6 float-right">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div>    
         </div>
 
     </div>
+    <!-- modal -->
     <div
-        class="fixed inset-0 hidden bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full"
+        class=" hidden fixed inset-0  bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full"
         id="my-modal"
     >
-    <!-- modal -->
+    
         <div
-	        class="relative top-20 mx-auto p-5 border w-2/4 shadow-lg rounded-md bg-white"
+	        class="relative top-20 mx-auto p-5 border w-2/4 shadow-lg  rounded-md bg-white"
         >
         <div class="mt-0 text-center">
             <div
@@ -140,15 +222,18 @@
                 <p class="text-sm text-gray-500"> 
                     <!-- liste panier -->
                     <div
-                        class="p-5 border shadow-lg rounded-md bg-white text-left h-20 flex justify-start space-x-8 mb-2"
+                        class="p-5 border shadow-lg rounded-md bg-white text-left h-24 flex justify-start space-x-8 mb-2"
                     >
                         <img
-                            class="rounded-md object-cover h-auto "
+                            class="rounded-md object-cover"
                             src="https://cdn.shopify.com/s/files/1/0550/6996/6414/products/6560_1800x.jpg?v=1645098113"
-                            alt="" />
-                        <span>Title sweat</span>
-                        <span>PRIX</span>  
+                            alt="mini preview" />
+                        <span>Dedicated Fallun (L) </span> <!--  name -->
+                        <span>105</span>  <!--  prix unité -->
+                        <span>x2</span> <!--  quantité -->
+                        <span>TOTAL</span> <!--  quantité*price -->
                     </div>
+                    
                     
                 </p>
             </div>
